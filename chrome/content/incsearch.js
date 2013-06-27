@@ -610,6 +610,13 @@ IncSearch.prototype = {
     }
   },
 
+  resetInput: function(){
+    var value = this.input.value;
+    if (value){
+       this.input.value="";
+    }
+  },
+  
   // Utils
   _bind: function(func) {
     var self = this;

@@ -176,6 +176,9 @@ window.addEventListener('load', function(){
   document.addEventListener(
     'keydown',
     function(event) {
+      if (event.keyCode==27)
+        incsearch.resetInput();
+      else
       if (event.ctrlKey) {
         switch(event.keyCode) {
           case 85:  // u (Sync)

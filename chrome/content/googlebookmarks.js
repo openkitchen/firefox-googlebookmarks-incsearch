@@ -9,7 +9,7 @@ var GoogleBookmarksParser = {
 
       bookmark.id = idStart + i;
       bookmark.url = this.getFirstText(item, 'link');
-      bookmark.title = this.getFirstText(item, 'title');
+      bookmark.title = this.getFirstText(item, 'title')+"  "+bookmark.url;
       bookmark.info = this.getInfo(item);
       bookmark.tags = this.getTags(item);
       bookmark.time = this.getFirstText(item, 'pubDate');
