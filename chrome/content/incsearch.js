@@ -178,7 +178,7 @@ IncSearch.prototype = {
       return;
     }
 
-    window.open(this.results[rowNo - 1].url, this.urlTarget);
+    window.open(this.results[rowNo - 1].url, '_blank');
   },
   openEditWindow: function(rowNo) {
 
